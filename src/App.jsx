@@ -17,8 +17,11 @@ import IndividualClient from "./Host-Information/IndividualClient";
 import ClientInfoPage from "./Host-Information/IndividualClientInfo/ClientInfoPage";
 import PersonalClientIncome from "./Host-Information/IndividualClientInfo/PersonalClientIncome";
 import PersonalClientReview from "./Host-Information/IndividualClientInfo/PersonalClientReview";
+import Authenticated from "./LoginDetails/Authenticated";
+import SignUp from "./LoginDetails/SignUpFiles/SignUp";
 
 function App() {
+  const authenticated = false;
   return (
     <>
       <div className="body">
@@ -28,15 +31,18 @@ function App() {
             <Route path="about" element={<About />} />
             <Route path="friends" element={<FriendList />} />
             <Route path="friends/:id" element={<Profile />} />
-            <Route path="host" element={<HostLayout />}>
-              <Route index element={<HostOverview />} />
-              <Route path="income" element={<HostIncome />} />
-              <Route path="reviews" element={<HostReviews />} />
-              <Route path="clients" element={<HostClients />} />
-              <Route path="clients/:id" element={<IndividualClient />}>
-                <Route index element={<ClientInfoPage />} />
-                <Route path="income" element={<PersonalClientIncome />} />
-                <Route path="review" element={<PersonalClientReview />} />
+            <Route element={<Authenticated authenticated={authenticated} />}>
+              <Route path="login" element={<SignUp />} />
+              <Route path="host" element={<HostLayout />}>
+                <Route index element={<HostOverview />} />
+                <Route path="income" element={<HostIncome />} />
+                <Route path="reviews" element={<HostReviews />} />
+                <Route path="clients" element={<HostClients />} />
+                <Route path="clients/:id" element={<IndividualClient />}>
+                  <Route index element={<ClientInfoPage />} />
+                  <Route path="income" element={<PersonalClientIncome />} />
+                  <Route path="review" element={<PersonalClientReview />} />
+                </Route>
               </Route>
             </Route>
             <Route path="*" element={<h1>Page not found</h1>} />

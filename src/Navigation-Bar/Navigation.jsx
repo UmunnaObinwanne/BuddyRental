@@ -48,7 +48,7 @@ function NavigationBar() {
                 to="/host"
                 style={({ isActive }) => (isActive ? activeStyles : null)}
               >
-                Sign-In
+                Account
               </NavLink>
             </Nav>
           </Navbar.Collapse>
