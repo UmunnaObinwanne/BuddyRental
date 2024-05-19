@@ -1,7 +1,8 @@
+import "./Features.styles.css";
 function FeaturesSection() {
   const containerStyle = {
     padding: "4rem", // Add padding to the container
-    margin: "20px auto", // Add margin top to the container
+    margin: "5rem auto", // Add margin top to the container
   };
 
   return (

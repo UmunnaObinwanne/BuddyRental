@@ -1,12 +1,4 @@
-body{margin-top:20px;}
-.footer_area {
-    position: relative;
-    z-index: 1;
-    overflow: hidden;
-webkit-box-shadow: 0 8px 48px 8px rgba(47, 91, 234, 0.175);
-    box-shadow: 0 8px 48px 8px rgba(47, 91, 234, 0.175);
-    padding:60px;
-}
+
 .footer_area .row {
     margin-left: -25px;
     margin-right: -25px;
@@ -85,10 +77,7 @@ webkit-box-shadow: 0 8px 48px 8px rgba(47, 91, 234, 0.175);
     padding-left: 25px;
 }
 
-.single-footer-widget {
-    position: relative;
-    z-index: 1;
-}
+
 .single-footer-widget .copywrite-text a {
     color: #747794;
     font-size: 1rem;
@@ -166,4 +155,21 @@ ol, ul {
 
  .container {
   margin: 20px; /* Adjust the value as needed */
+}
+
+.footer_area {
+
+  bottom: 0;
+  width: 100%;
+  background-color: #ffffff; /* Add your desired background color */
+  padding: 20px; /* Adjust padding as needed */
+  box-shadow: 0px -2px 5px rgba(0, 0, 0, 0.1); /* Add shadow for better visibility */
+
+margin-top: 100px;
+position: relative; 
+    z-index: 1;
+    overflow: hidden;
+webkit-box-shadow: 0 8px 48px 8px rgba(47, 91, 234, 0.175);
+    box-shadow: 0 8px 48px 8px rgba(47, 91, 234, 0.175);
+    padding:60px;
 }

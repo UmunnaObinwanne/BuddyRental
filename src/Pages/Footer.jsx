@@ -9,7 +9,7 @@ function Footer() {
               <div className="single-footer-widget section_padding_0_130">
                 <div className="footer-logo mb-3"></div>
                 <p>
-                  BUddyRent is a simple friend renting platform for shy people
+                  BuddyRent is a simple friend renting platform for shy people
                   looking to get quick friends.
                 </p>
 

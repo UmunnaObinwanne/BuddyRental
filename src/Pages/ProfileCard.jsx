@@ -1,10 +1,20 @@
+import { NavLink } from "react-router-dom";
 import "./ProfileCard.styles.css";
 
-import "./ProfileCard.styles.css";
+import { useNavigate } from "react-router-dom";
 
-function ProfileCard({ user }) {
+function ProfileCard({ user, onlinFilter }) {
+  const navigate = useNavigate();
+
+  function goBack() {
+    navigate(-1);
+  }
+
   return (
-    <div>
+    <div className="navback-link">
+      <div className="navlink-back">
+        <NavLink onClick={goBack}>&laquo; go back to friends</NavLink>
+      </div>
       <div className="container">
         <div className="main-body">
           <div className="row gutters-sm">

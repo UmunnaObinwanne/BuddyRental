@@ -11,7 +11,19 @@ const friendsData = [
     followers: 100,
     following: 50,
     online: true,
-    pricePerDay: "€50", // Price per day in euros
+    pricePerDay: 50, // Price per day in euros
+    yourClients: [
+      {
+        name: "Alice Johnson",
+        image: "https://bootdey.com/img/Content/avatar/avatar2.png",
+        pricePaid: "€50",
+      },
+      {
+        name: "Robert Brown",
+        image: "https://bootdey.com/img/Content/avatar/avatar3.png",
+        pricePaid: "€100",
+      },
+    ],
   },
   {
     id: 2,
@@ -29,7 +41,19 @@ const friendsData = [
     followers: 200,
     following: 75,
     online: false,
-    pricePerDay: "€70", // Price per day in euros
+    pricePerDay: 70, // Price per day in euros
+    yourClients: [
+      {
+        name: "Chris Evans",
+        image: "https://bootdey.com/img/Content/avatar/avatar4.png",
+        pricePaid: "€70",
+      },
+      {
+        name: "Natalie Portman",
+        image: "https://bootdey.com/img/Content/avatar/avatar5.png",
+        pricePaid: "€140",
+      },
+    ],
   },
   {
     id: 3,
@@ -47,7 +71,19 @@ const friendsData = [
     followers: 150,
     following: 100,
     online: true,
-    pricePerDay: "€60", // Price per day in euros
+    pricePerDay: 60, // Price per day in euros
+    yourClients: [
+      {
+        name: "Samuel Jackson",
+        image: "https://bootdey.com/img/Content/avatar/avatar6.png",
+        pricePaid: "€60",
+      },
+      {
+        name: "Emma Watson",
+        image: "https://bootdey.com/img/Content/avatar/avatar7.png",
+        pricePaid: "€120",
+      },
+    ],
   },
   {
     id: 4,
@@ -61,7 +97,19 @@ const friendsData = [
     followers: 300,
     following: 120,
     online: false,
-    pricePerDay: "€80", // Price per day in euros
+    pricePerDay: 80, // Price per day in euros
+    yourClients: [
+      {
+        name: "Tom Hanks",
+        image: "https://bootdey.com/img/Content/avatar/avatar8.png",
+        pricePaid: "€80",
+      },
+      {
+        name: "Scarlett Johansson",
+        image: "https://bootdey.com/img/Content/avatar/avatar9.png",
+        pricePaid: "€160",
+      },
+    ],
   },
   {
     id: 5,
@@ -75,7 +123,19 @@ const friendsData = [
     followers: 250,
     following: 80,
     online: true,
-    pricePerDay: "€90", // Price per day in euros
+    pricePerDay: 90, // Price per day in euros
+    yourClients: [
+      {
+        name: "Leonardo DiCaprio",
+        image: "https://bootdey.com/img/Content/avatar/avatar10.png",
+        pricePaid: "€90",
+      },
+      {
+        name: "Jennifer Lawrence",
+        image: "https://bootdey.com/img/Content/avatar/avatar1.png",
+        pricePaid: "€180",
+      },
+    ],
   },
   {
     id: 6,
@@ -89,7 +149,19 @@ const friendsData = [
     followers: 180,
     following: 90,
     online: false,
-    pricePerDay: "€75", // Price per day in euros
+    pricePerDay: 75, // Price per day in euros
+    yourClients: [
+      {
+        name: "George Clooney",
+        image: "https://bootdey.com/img/Content/avatar/avatar2.png",
+        pricePaid: "€75",
+      },
+      {
+        name: "Sandra Bullock",
+        image: "https://bootdey.com/img/Content/avatar/avatar3.png",
+        pricePaid: "€150",
+      },
+    ],
   },
   {
     id: 7,
@@ -107,7 +179,19 @@ const friendsData = [
     followers: 400,
     following: 200,
     online: true,
-    pricePerDay: "€100", // Price per day in euros
+    pricePerDay: 100, // Price per day in euros
+    yourClients: [
+      {
+        name: "Meryl Streep",
+        image: "https://bootdey.com/img/Content/avatar/avatar4.png",
+        pricePaid: "€100",
+      },
+      {
+        name: "Denzel Washington",
+        image: "https://bootdey.com/img/Content/avatar/avatar5.png",
+        pricePaid: "€200",
+      },
+    ],
   },
   {
     id: 8,
@@ -121,7 +205,19 @@ const friendsData = [
     followers: 350,
     following: 150,
     online: true,
-    pricePerDay: "€120", // Price per day in euros
+    pricePerDay: 120, // Price per day in euros
+    yourClients: [
+      {
+        name: "Chris Hemsworth",
+        image: "https://bootdey.com/img/Content/avatar/avatar6.png",
+        pricePaid: "€120",
+      },
+      {
+        name: "Gal Gadot",
+        image: "https://bootdey.com/img/Content/avatar/avatar7.png",
+        pricePaid: "€240",
+      },
+    ],
   },
   {
     id: 9,
@@ -135,7 +231,19 @@ const friendsData = [
     followers: 280,
     following: 100,
     online: false,
-    pricePerDay: "€85", // Price per day in euros
+    pricePerDay: 85, // Price per day in euros
+    yourClients: [
+      {
+        name: "Johnny Depp",
+        image: "https://bootdey.com/img/Content/avatar/avatar8.png",
+        pricePaid: "€85",
+      },
+      {
+        name: "Keira Knightley",
+        image: "https://bootdey.com/img/Content/avatar/avatar9.png",
+        pricePaid: "€170",
+      },
+    ],
   },
   {
     id: 10,
@@ -149,7 +257,19 @@ const friendsData = [
     followers: 220,
     following: 110,
     online: true,
-    pricePerDay: "€110", // Price per day in euros
+    pricePerDay: 110, // Price per day in euros
+    yourClients: [
+      {
+        name: "Matt Damon",
+        image: "https://bootdey.com/img/Content/avatar/avatar10.png",
+        pricePaid: "110",
+      },
+      {
+        name: "Anne Hathaway",
+        image: "https://bootdey.com/img/Content/avatar/avatar1.png",
+        pricePaid: "€220",
+      },
+    ],
   },
 ];
 

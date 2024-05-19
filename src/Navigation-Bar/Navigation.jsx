@@ -1,40 +1,63 @@
 import Container from "react-bootstrap/Container";
 import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
-import { Link, Outlet } from "react-router-dom";
+import { NavLink, Link, Outlet } from "react-router-dom";
 import Footer from "../Pages/Footer";
 
 function NavigationBar() {
+  const activeStyles = {
+    textDecoration: "underline",
+    fontWeight: "bold",
+    color: "#161616",
+  };
   return (
     <div>
       <Navbar expand="lg" className="bg-body-tertiary">
         <Container fluid>
           <Navbar.Brand>
-            <Link to="/" className="nav-link text-decoration-none">
+            <Link to="/" className="nav-NavLink text-decoration-none">
               BuddyRent!
             </Link>
           </Navbar.Brand>
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
           <Navbar.Collapse id="basic-navbar-nav">
             <Nav className="ms-auto">
-              <Link className="nav-link mx-3" to="/about">
+              <NavLink
+                className="nav-NavLink mx-3"
+                to="/about"
+                style={({ isActive }) => (isActive ? activeStyles : null)}
+              >
                 About
-              </Link>
-              <Link className="nav-link mx-3" to="#">
+              </NavLink>
+              <NavLink
+                className="nav-NavLink mx-3"
+                to="/contact"
+                style={({ isActive }) => (isActive ? activeStyles : null)}
+              >
                 Contact
-              </Link>
-              <Link className="nav-link mx-3" to="/friends">
+              </NavLink>
+              <NavLink
+                className="nav-NavLink mx-3"
+                to="/friends"
+                style={({ isActive }) => (isActive ? activeStyles : null)}
+              >
                 Friends
-              </Link>
-              <Link className="nav-link mx-3" to="/host">
+              </NavLink>
+              <NavLink
+                className="nav-NavLink mx-3"
+                to="/host"
+                style={({ isActive }) => (isActive ? activeStyles : null)}
+              >
                 Sign-In
-              </Link>
+              </NavLink>
             </Nav>
           </Navbar.Collapse>
         </Container>
       </Navbar>
-      <Outlet />
-      <Footer />
+      <Outlet className="outlet" />
+      <div className="footer">
+        <Footer />
+      </div>
     </div>
   );
 }
